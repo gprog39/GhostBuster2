@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApplication2
+﻿namespace GhostBuster2
 {
     public class Partie
     {
