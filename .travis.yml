@@ -2,7 +2,7 @@ language: csharp
 solution: GhostBuster2.sln
 install:
   - nuget restore GhostBuster2.sln
-  - nuget install NUnit.Runners -Version 3.6.1 -OutputDirectory testrunner
+  - nuget install NUnit.Runners -Version 2.6.3 -OutputDirectory testrunner
 script:
   - xbuild /p:Configuration=Debug GhostBuster2.sln
-  - mono ./testrunner/NUnit.Runners.3.6.1/tools/nunit-console.exe ./GhostBuster2Tests/bin/Debug/GhostBuster2Tests.dll
+  - mono ./testrunner/NUnit.Runners.2.6.3/tools/nunit-console.exe ./GhostBuster2Tests/bin/Debug/GhostBuster2Tests.dll
